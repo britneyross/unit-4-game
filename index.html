@@ -20,11 +20,23 @@
             <p>The value of each crystal is hidden from you until you click on it.</p>
             <p>Each time the game starts, the values of each crystal will change.</p>
         </div>
+        <div class="row">
+            <div id="randomNumber">
+                <p>Random Number: <span id="randomNumber"></span></p>
+            </div>
+            <div id="scoreboard">
+                <h3>Wins: <span id="wins"></span></h3>
+                <h3>Losses: <span id="losses"></span></h3>
+            </div>
+        </div>
         <div class="row" id="crystals">
-            <img src="assets/images/blue-gem.jpeg" class=gemImage id="blueGem" alt="" width=120px height=120px>
+            <img src="assets/images/blue-gem.jpeg" class=gemImage id="blueGem" alt="" width=130px height=120px>
             <img src="assets/images/yellow-gem.jpeg" class=gemImage id="yellowGem" alt="" width=120px height=120px>
             <img src="assets/images/red-gem.png" class=gemImage id="redGem" alt="" width=120px height=120px>
             <img src="assets/images/purple-gem.jpeg" class=gemImage id="purpleGem" alt="" width=120px height=120px>
+        </div>
+        <div class="row" id="totalScore">
+            <h2>Your total score is: <span id="yourScore">0</span></h2>
         </div>
     </div>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
