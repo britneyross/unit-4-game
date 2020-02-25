@@ -10,5 +10,17 @@ p{
 h1{
     font-size: 40px;
     padding: 20px;
+    color: blue;
 }
 
+h3{
+    font-size: 20px;
+    padding: 20px;
+    color: darkviolet;
+}
+
+#totalScore{
+    font-size: 20px;
+    color: darkviolet;
+    padding: 20px;
+}
