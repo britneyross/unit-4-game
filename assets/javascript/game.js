@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var randomNumber=Math.floor(Math.random() * (120-19+1)) + 19;
 
-    $('#randomNumber').text(randomNumber);
+    $('#randomNumber').html(randomNumber);
 
     var blueGem= Math.floor(Math.random()*12)+1;
     var yellowGem= Math.floor(Math.random()*12)+1;
@@ -12,8 +12,8 @@ $(document).ready(function(){
     var losses= 0;
     var totalScore= 0;
 
-    $('#wins').text(wins);
-    $('#losses').text(losses);
+    $('#wins').html(wins);
+    $('#losses').html(losses);
 
     function reset(){
         randomNumber=Math.floor(Math.random() * (120-19+1)) + 19;
@@ -24,26 +24,26 @@ $(document).ready(function(){
         redGem= Math.floor(Math.random()*12)+1;
         purpleGem= Math.floor(Math.random()*12)+1;
         totalScore= 0;
-        $('#yourScore').text(totalScore);
+        $('#yourScore').html(totalScore);
     }
 
     function win(){
         alert("You win!");
         wins ++;
-        $('#wins').text(wins);
+        $('#wins').html(wins);
         reset();
     }
 
     function lose(){
         alert("You lose! Try again!");
         losses ++;
-        $('#losses').text(losses);
+        $('#losses').html(losses);
         reset();
     }
 
     $("#blueGem").on("click", function(){
         totalScore= totalScore + blueGem;
-        $('#yourScore').text(totalScore);
+        $('#yourScore').html(totalScore);
         if(totalScore === randomNumber){
             win();
         }
@@ -54,7 +54,7 @@ $(document).ready(function(){
 
     $("#yellowGem").on("click", function(){
         totalScore= totalScore + yellowGem;
-        $('#yourScore').text(totalScore);
+        $('#yourScore').html(totalScore);
         if(totalScore === randomNumber){
             win();
         }
@@ -65,7 +65,7 @@ $(document).ready(function(){
 
     $("#redGem").on("click", function(){
         totalScore= totalScore + redGem;
-        $('#yourScore').text(totalScore);
+        $('#yourScore').html(totalScore);
         if(totalScore === randomNumber){
             win();
         }
@@ -76,7 +76,7 @@ $(document).ready(function(){
 
     $("#purpleGem").on("click", function(){
         totalScore= totalScore + purpleGem;
-        $('#yourScore').text(totalScore);
+        $('#yourScore').html(totalScore);
         if(totalScore === randomNumber){
             win();
         }

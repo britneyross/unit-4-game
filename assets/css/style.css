@@ -24,3 +24,10 @@ h3{
     color: darkviolet;
     padding: 20px;
 }
+
+#randomNumber{
+    font-size: 30px;
+    padding: 20px;
+    color: crimson;
+    font-weight: bold;
+}
